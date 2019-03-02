@@ -1,0 +1,29 @@
+/**
+ * Interface for the game display and for getting user input.
+ */
+public interface GameDisplay {
+    /**
+     * Inform the GUI that the game is over.
+     *
+     * @param PlayerNumber
+     */
+    public void gameOver(Status PlayerNumber);
+
+    /**
+     * Update the game board, when a new move has been made.
+     *
+     * @param board
+     */
+    public void updateBoard(Status[][] board);
+
+    /**
+     * Return a value between 1 and maxDifficulty,
+     * indicating the user’s choice of how hard the game AI should be.
+     * <p>
+     * This method should be called once at the beginning of each match.
+     *
+     * @param maxDifficulty
+     * @return
+     */
+    public int promptForOpponentDifficulty(int maxDifficulty);
+}

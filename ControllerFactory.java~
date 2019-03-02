@@ -1,0 +1,14 @@
+/**
+ * A Connect Controller creator, which hide the specify implement of ConnectController.
+ */
+public class ControllerFactory {
+    /**
+     * Create a ConnectController with the given GameDisplay object.
+     *
+     * @param gameDisplay
+     * @return
+     */
+    public static ConnectController makeController(GameDisplay gameDisplay) {
+        return new GameLogic(gameDisplay);
+    }
+}

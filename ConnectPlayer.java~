@@ -1,0 +1,13 @@
+/**
+ * Connect Player Interface.
+ */
+public interface ConnectPlayer {
+    /**
+     * Take the last move made by the (human) player and return
+     * the next move made by the AI.
+     *
+     * @param lastCol
+     * @return
+     */
+    public int makeMove(int lastCol);
+}

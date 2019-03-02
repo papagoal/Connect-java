@@ -1,0 +1,21 @@
+/**
+ * The back end that manages the game logic.
+ */
+public interface ConnectController {
+    /**
+     * Informs the controller that a piece has been played in the column 'col'.
+     * <p>
+     * The method should return false only when the move is invalid.
+     *
+     * @param col
+     * @return
+     */
+    public boolean addPiece(int col);
+
+    /**
+     * Resets the game.
+     * <p>
+     * It will be called when the player requests a new game.
+     */
+    public void reset();
+}
